@@ -4,7 +4,7 @@
 
 
 
-## 背景与动机
+## 一、背景与动机
 
 浏览器 Agent 执行多步任务时，需要持续读取页面、选择操作、观察结果，并根据状态变化调整后续计划。任务链路越长，局部误差越容易传递到后续步骤；网页内容和交互状态不断变化，也让稳定执行与效果评估变得更困难。
 
@@ -30,7 +30,7 @@
 
 
 
-## 技术路线与系统架构
+## 二、技术路线与系统架构
 
 系统以用户任务为起点，首先初始化 Agent 和浏览器会话，随后，Agent 在每一轮迭代中获取当前浏览器状态，并将其整理为模型可用的上下文。
 
@@ -40,7 +40,9 @@
 
 ![image](./img/architecture.svg)
 
-## 核心模块
+
+
+## 三、核心模块
 
 ### DOM状态压缩与上下文管理
 
@@ -628,7 +630,7 @@ flowchart TD
 
 
 
-## 代码导航
+## 四、代码导航
 
 项目代码按功能划分为以下一级目录：
 
@@ -644,7 +646,7 @@ flowchart TD
 
 
 
-## 快速开始
+## 五、快速开始
 
 ### 1. 克隆项目并安装依赖
 
@@ -737,7 +739,7 @@ uv run python -m browser_use.evaluation.cli traces --db data/eval_results.db --f
 
 
 
-## 实例演示
+## 六、实例演示
 
 ⭕ 由于嵌入的演示视频清晰度受损，原始视频放置于`./img/`目录下。以下展示示例任务。
 
@@ -772,7 +774,7 @@ uv run python -m browser_use.evaluation.cli traces --db data/eval_results.db --f
 > **Task**：打开豆瓣电影 Top 250（https://movie.douban.com/top250 ），提取里面所有电影（Top 250）的数据：排名、片名、导演与主演、评分、评价人数、一句简介，保存为本地csv文件（豆瓣电影 Top 250.csv）。
 
 
-## 相关链接
+## 七、相关链接
 
 - [CDP](https://chromedevtools.github.io/devtools-protocol/)
 - [Pydantic](https://github.com/pydantic/pydantic)
@@ -784,7 +786,7 @@ uv run python -m browser_use.evaluation.cli traces --db data/eval_results.db --f
 
 
 
-## 常见问题
+## 八、常见问题
 
 **Q1：为什么不用 Selenium / Playwright 写固定脚本，而要 LLM Agent？**
 
