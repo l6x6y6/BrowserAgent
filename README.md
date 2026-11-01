@@ -651,8 +651,8 @@ flowchart TD
 ### 1. 克隆项目并安装依赖
 
 ```bash
-git clone <GitHub 仓库地址>
-cd <仓库目录>
+git clone https://github.com/l6x6y6/BrowserAgent.git
+cd BrowserAgent
 
 uv venv --python 3.11
 ```
