@@ -739,6 +739,8 @@ uv run python -m browser_use.evaluation.cli traces --db data/eval_results.db --f
 
 ## 实例演示
 
+⭕ 由于嵌入的演示视频清晰度受损，原始视频放置于`./img/`目录下。以下展示示例任务。
+
 ### 表单填写
 
 > **Task**：
@@ -754,33 +756,20 @@ uv run python -m browser_use.evaluation.cli traces --db data/eval_results.db --f
 >
 > 填完就提交，然后告诉我提交后的页面相应内容。
 
-https://github.com/user-attachments/assets/939acfd4-3ce5-40f8-97be-fb5db146046e
-
-
 
 ### 高铁班次查询
 
 > **Task**：在中国铁路12306官网上查询上海至杭州2026年11月1日的高铁车次，整理出发时间、到达时间、历时和二等座价格；根据“上午出发、历时较短”的条件推荐 2 个选项
-
-https://github.com/user-attachments/assets/72e38f43-4bc4-4939-b97d-a7cdc962378b
-
 
 
 ### 商品选购比对
 
 > **Task**：打开苏宁易购，搜索"联想笔记本电脑"，滑动并翻页完成所有搜索结果的浏览，在所有搜索结果中，综合销量多、价格适中给我推荐6款笔记本电脑，以列表形式给出名称、品牌、价格与核心配置（处理器、内存、硬盘等）
 
-https://github.com/user-attachments/assets/0e60ace1-0851-4492-84b7-bf74256506b3
-
-
 
 ### 提取豆瓣数据保存为csv文件
 
-> **Task：**打开豆瓣电影 Top 250（https://movie.douban.com/top250 ），提取里面所有电影（Top 250）的数据：排名、片名、导演与主演、评分、评价人数、一句简介，保存为本地csv文件（豆瓣电影 Top 250.csv）。
-
-https://github.com/user-attachments/assets/8ceaa64f-b319-4c60-9246-0899df41474e
-
-
+> **Task**：打开豆瓣电影 Top 250（https://movie.douban.com/top250 ），提取里面所有电影（Top 250）的数据：排名、片名、导演与主演、评分、评价人数、一句简介，保存为本地csv文件（豆瓣电影 Top 250.csv）。
 
 
 ## 相关链接
